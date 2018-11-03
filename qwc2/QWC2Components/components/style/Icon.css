@@ -1,0 +1,11 @@
+.icon {
+    display: inline-block;
+}
+
+span.iconlarge:before {
+    font-size: large;
+}
+
+span.iconxlarge:before {
+    font-size: x-large;
+}

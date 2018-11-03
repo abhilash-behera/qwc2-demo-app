@@ -1,0 +1,28 @@
+div.ButtonBar {
+    position: relative;
+    display: flex;
+    margin: 0.25em 0;
+}
+
+div.ButtonBar.buttonbar-disabled:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+}
+
+div.ButtonBar.buttonbar-disabled > button {
+    background-color: transparent;
+    color: #ccc;
+}
+
+div.ButtonBar > button {
+    flex: 1 1 auto;
+    border-left-width: 0;
+}
+
+div.ButtonBar > button:first-child {
+    border-left-width: 1px;
+}

@@ -1,0 +1,50 @@
+#BackgroundSwitcher {
+    position: absolute;
+    right: 5em;
+    bottom: 3.5em;
+    z-index: 3;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.1s;
+}
+
+#BackgroundSwitcher.bgswitcher-active {
+    transform: scaleX(1);
+}
+
+#BackgroundSwitcher div.background-layer-item {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin: 0.5em;
+    width: 8em;
+    border: 1px solid @item_border@;
+}
+
+#BackgroundSwitcher div.background-layer-item:hover {
+    border: 1px solid @item_active@;
+}
+
+#BackgroundSwitcher div.background-layer-item-active {
+    border: 1px solid @item_active@;
+    color: @item_active@;
+}
+
+#BackgroundSwitcher div.background-layer-thumbnail {
+    height: 4em;
+}
+
+#BackgroundSwitcher div.background-layer-thumbnail > img {
+    width: 100%;
+    height: 100%;
+}
+
+#BackgroundSwitcher div.background-layer-title {
+    font-weight: bold;
+    font-size: x-small;
+    text-align: center;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
